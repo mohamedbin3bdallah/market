@@ -1,0 +1,77 @@
+.loading
+{
+	visibility: visible;
+	padding-top: 50%;
+}
+.loadingh1 {
+  margin: 0;
+  height: 12vmin;
+  width: 120vmin;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.loadingh1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: -23vmin;
+  left: 25vmin;
+  width: 70vmin;
+  height: 62vmin;
+  border-radius: 50%;
+  border: 1.3vmin solid #0F72B8;
+  box-sizing: border-box;
+}
+
+em {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #0F72B8;
+  font-size: 15vmin;
+  position: relative;
+  font-style: normal;
+  width: 20vmin;
+  text-align: center;
+}
+
+em.planet {
+  -webkit-animation: planet-rotate 4s linear infinite;
+  animation: planet-rotate 4s linear infinite;
+  position: relative;
+}
+
+em.planet::before {
+  content: "";
+  position: absolute;
+  top: 2.1vmin;
+  left: 2.1vmin;
+  z-index: -1;
+  width: 13vmin;
+  height: 13vmin;
+  border-radius: 50%;
+  background: #fff;
+}
+
+em.planet.left {
+  -webkit-transform-origin: 42vmin 7vmin;
+  transform-origin: 42vmin 7vmin;
+}
+
+em.planet.right {
+  -webkit-transform-origin: -25vmin 7vmin;
+  transform-origin: -25vmin 7vmin;
+}
+
+@-webkit-keyframes planet-rotate {
+  to {
+    -webkit-transform: rotate(1turn);
+  }
+}
+
+@keyframes planet-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}

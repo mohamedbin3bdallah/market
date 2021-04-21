@@ -1,0 +1,7 @@
+a {	color: green; padding: 5px; }
+a:hover {	color: orange; padding: 5px; text-decoration: none;}
+i {	color: gray; }
+i:hover {	color: blue; }
+img { border-radius: 30px; }
+.form-body { text-align: center;}
+.list-label { padding: 15px; }

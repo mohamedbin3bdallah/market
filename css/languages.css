@@ -1,0 +1,24 @@
+select {
+    //background: #FFF url('down-arrow.png') no-repeat right;
+	background: rgba(255, 255, 255, 0);
+    appearance:none;
+    -webkit-appearance:none; 
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 25%;
+    line-height: 25px;	
+}
+select option {		
+	float: left;
+	background: rgba(20, 7, 156, 1);
+	color: #FFF;
+	text-align: center;
+	border-radius: 3px;
+	margin: 2px;
+	padding: 7px;	
+}
+select option:focus {
+	background: red;	
+}
